@@ -1,19 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <head>
-	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+  <meta charset="utf-8" />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
-	</form>
-
+  <img id="banner" class="center" src="./images/launchcode-google.png" />
+  <form id="searchForm">
+    <input
+      class="center roundedCorners"
+      id="mainInput"
+      name="q"
+      placeholder="Enter your search query!"
+    />
+    <button id="searchButton" class="center roundedCorners" value="Go!">
+      Search!
+    </button>
+    <label class="center"
+      ><span class="bold">Search Engines:</span>
+      <label
+        ><input
+          required
+          type="radio"
+          name="engine"
+          value="google"
+        />Google</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="engine"
+          value="duckDuckGo"
+        />DuckDuckGo</label
+      >
+      <label><input type="radio" name="engine" value="bing" />Bing</label>
+      <label><input type="radio" name="engine" value="ask" />Ask</label>
+    </label>
+    <div id="quote"></div>
+  </form>
 </body>

@@ -1,0 +1,52 @@
+body {
+  background-color: whitesmoke;
+}
+
+#banner {
+  filter: drop-shadow(4px 4px 2px grey);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: auto;
+  width: 50%;
+}
+
+#banner:hover {
+  filter: brightness(0.85) drop-shadow(4px 4px 2px grey);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roundedCorners {
+  border-radius: 25px;
+}
+
+#searchButton {
+  font-size: large;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 5px 30px 5px 30px;
+}
+
+#searchForm {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#mainInput {
+  font-size: large;
+  min-width: 50%;
+  padding: 5px 0px 5px 5px;
+}
+
+#quote {
+  margin-top: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
