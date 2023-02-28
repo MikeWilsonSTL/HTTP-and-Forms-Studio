@@ -5,6 +5,7 @@ function setSearchEngine() {
     duckDuckGo: 'https://duckduckgo.com/',
     ask: 'https://www.ask.com/web',
   };
+
   let chosenEngineInput = document.querySelector('input[name=engine]:checked');
   document.getElementById('searchForm').action =
     actions[chosenEngineInput.value];
@@ -16,7 +17,7 @@ window.addEventListener('load', function () {
   };
 
   searchForm.addEventListener('submit', function (event) {
-    if (mainInput.value === '') {
+    if (mainInput.value.trim() === '') {
       alert('Search query required!');
       event.preventDefault();
     } else {
